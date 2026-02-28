@@ -1,0 +1,156 @@
+/* ====== GLOBAL ====== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #0b0f0e;
+    color: #e6ffe6;
+}
+
+/* ====== NAVBAR ====== */
+/* Navbar general */
+.navbar {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    transition: 0.3s ease;
+}
+
+    /* Cuando hace scroll */
+    .navbar.scrolled {
+        background: #000;
+    }
+
+/* Logo más grande y original */
+.brand-logo {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #00ff88 !important;
+    text-transform: uppercase;
+}
+
+/* Links más grandes */
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 15px;
+    color: white !important;
+    transition: 0.3s;
+}
+
+    /* Efecto hover moderno */
+    .navbar-nav .nav-link:hover {
+        color: #00ff88 !important;
+        text-shadow: 0 0 10px rgba(0,255,136,0.7);
+    }
+
+/* ====== HERO ====== */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /* Imagen + capa oscura */
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("../img/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+/* ====== SECTIONS ====== */
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #00ff88;
+}
+
+/* ====== FEATURE BOX ====== */
+.feature-box {
+    padding: 30px;
+    border-radius: 15px;
+    background: #0f1f17;
+    border: 1px solid #00ff88;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+}
+
+.faq-section {
+    background: linear-gradient(180deg, #0b0f0e, #0f1f17);
+}
+
+.custom-accordion .accordion-item {
+    background-color: #0f1f17;
+    border: 1px solid #00ff88;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-accordion .accordion-button {
+    background-color: #0f1f17;
+    color: #00ff88;
+    font-weight: 600;
+}
+
+    .custom-accordion .accordion-button:not(.collapsed) {
+        background-color: #001a0d;
+        color: #00ff88;
+        box-shadow: none;
+    }
+
+.custom-accordion .accordion-body {
+    background-color: #0b0f0e;
+    color: #e6ffe6;
+}
+
+
+/* ====== BOTONES ====== */
+.btn-primary {
+    background-color: #00ff88;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #00cc6a;
+    box-shadow: 0 0 20px #00ff88;
+    transform: scale(1.05);
+}
+
+/* ====== LIST GROUP (TOKENOMICS) ====== */
+.list-group-item {
+    background-color: #0f1f17;
+    border: 1px solid #003d1f;
+    color: #e6ffe6;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: #000;
+    border-top: 1px solid #00ff88;
+    color: #00ff88;
+}
