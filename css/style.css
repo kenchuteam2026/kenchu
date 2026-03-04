@@ -447,22 +447,44 @@ body::after {
     transition: all 0.3s ease;
 }
 
-
 /* =========================
-   SECCIONES ALTERNADAS
+   FLOATING SOCIAL BUTTONS
 ========================= */
 
-/* Sección clara */
-.section-light {
+.floating-social {
+    position: fixed;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+}
+
+.floating-social a {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
     background: #ffffff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
 }
 
-/* Sección verde suave */
-.section-green {
-    background: #f3fff8;
+/* X */
+.social-x {
+    color: #000000;
 }
 
-/* Sección con toque más fuerte */
-.section-accent {
-    background: #b3ffd9;
+/* Telegram */
+.social-telegram {
+    color: #0088cc;
+}
+
+.floating-social a:hover {
+    transform: scale(1.2);
 }
