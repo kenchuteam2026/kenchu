@@ -303,7 +303,16 @@ body {
 .platform-name {
     color: #00cc66;
     font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px dashed #00cc66;
+    transition: 0.3s ease;
 }
+
+    .platform-name:hover {
+        color: #ffcc00;
+        border-bottom: 2px solid #ffcc00;
+    }
 
 /* Tarjetas de pasos */
 .buy-card {
@@ -503,3 +512,15 @@ body::after {
 
 }
 
+.mint-link {
+    color: #00cc66;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px dashed #00cc66;
+    transition: 0.3s ease;
+}
+
+    .mint-link:hover {
+        color: #ffcc00;
+        border-bottom: 2px solid #ffcc00;
+    }
