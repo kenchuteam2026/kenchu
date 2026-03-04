@@ -448,18 +448,18 @@ body::after {
 }
 
 /* =========================
-   FLOATING SOCIAL BUTTONS
+   FLOATING SOCIAL RESPONSIVE
 ========================= */
 
 .floating-social {
     position: fixed;
-    right: 25px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    z-index: 999;
+    gap: 18px;
+    z-index: 9999;
 }
 
 .floating-social a {
@@ -469,22 +469,37 @@ body::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     background: #ffffff;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
     transition: 0.3s ease;
 }
 
-/* X */
-.social-x {
-    color: #000000;
-}
-
-/* Telegram */
-.social-telegram {
-    color: #0088cc;
-}
+/* Colores oficiales */
+.social-x { color: #000000; }
+.social-telegram { color: #0088cc; }
 
 .floating-social a:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
+
+/* 📱 MOBILE FIX */
+@media (max-width: 768px) {
+
+    .floating-social {
+        top: auto;
+        bottom: 20px;
+        right: 15px;
+        transform: none;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .floating-social a {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+}
+
