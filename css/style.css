@@ -364,32 +364,6 @@ body {
     }
 
 
-/* =========================
-   SCROLL TO TOP
-========================= */
-
-#scrollTopBtn {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 65px;
-    height: 65px;
-    background: #00cc66;
-    color: white;
-    border: 4px solid #b3ffd9;
-    border-radius: 50%;
-    font-size: 1.6rem;
-    cursor: pointer;
-    box-shadow: 0 8px 0 #b3ffd9;
-    display: none;
-    transition: 0.3s ease;
-}
-
-    #scrollTopBtn:hover {
-        transform: translateY(-5px);
-    }
-
-
 
 /* =========================
    FOOTER
@@ -457,7 +431,7 @@ body::after {
 }
 
 /* =========================
-   FLOATING SOCIAL RESPONSIVE
+   FLOATING SOCIAL (DESKTOP)
 ========================= */
 
 .floating-social {
@@ -468,59 +442,84 @@ body::after {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    z-index: 9999;
+    z-index: 9998;
 }
 
-.floating-social a {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    background: #ffffff;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-    transition: 0.3s ease;
-}
+    .floating-social a {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        background: #ffffff;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        transition: 0.3s ease;
+    }
 
 /* Colores oficiales */
-.social-x { color: #000000; }
-.social-telegram { color: #0088cc; }
+.social-x {
+    color: #000000;
+}
+
+.social-telegram {
+    color: #0088cc;
+}
 
 .floating-social a:hover {
     transform: scale(1.15);
 }
 
-/* 📱 MOBILE FIX */
+/* =========================
+   SCROLL TO TOP
+========================= */
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #00cc66;
+    color: white;
+    border: 3px solid #b3ffd9;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #b3ffd9;
+    display: none;
+    z-index: 9999;
+}
+
+/* =========================
+   📱 MOBILE FIX
+========================= */
+
 @media (max-width: 768px) {
 
+    /* Social abajo izquierda */
     .floating-social {
         top: auto;
-        bottom: 20px;
+        bottom: 90px; /* 🔥 importante: espacio sobre el scroll */
         right: 15px;
         transform: none;
         flex-direction: row;
         gap: 12px;
     }
 
-    .floating-social a {
+        .floating-social a {
+            width: 48px;
+            height: 48px;
+            font-size: 1.2rem;
+        }
+
+    /* Scroll un poco más abajo */
+    #scrollTopBtn {
+        bottom: 20px;
+        right: 15px;
         width: 50px;
         height: 50px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
-
 }
-
-.mint-link {
-    color: #00cc66;
-    font-weight: 700;
-    text-decoration: none;
-    border-bottom: 2px dashed #00cc66;
-    transition: 0.3s ease;
-}
-
-    .mint-link:hover {
-        color: #ffcc00;
-        border-bottom: 2px solid #ffcc00;
-    }
