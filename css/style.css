@@ -430,6 +430,19 @@ body::after {
     transition: all 0.3s ease;
 }
 
+.mint-link {
+    color: #00cc66;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px dashed #00cc66;
+    transition: 0.3s ease;
+}
+
+    .mint-link:hover {
+        color: #ffcc00;
+        border-bottom: 2px solid #ffcc00;
+    }
+
 /* =========================
    FLOATING SOCIAL (DESKTOP)
 ========================= */
@@ -493,33 +506,52 @@ body::after {
 }
 
 /* =========================
-   📱 MOBILE FIX
+   FIX Z-INDEX
+========================= */
+
+.floating-social {
+    z-index: 10001;
+}
+
+#scrollTopBtn {
+    z-index: 10000;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+.floating-social {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* =========================
+   MOBILE (IPHONE SAFE)
 ========================= */
 
 @media (max-width: 768px) {
 
-    /* Social abajo izquierda */
     .floating-social {
-        top: auto;
-        bottom: 90px; /* 🔥 importante: espacio sobre el scroll */
+        position: fixed;
+        bottom: 95px; /* 🔥 clave */
         right: 15px;
+        top: auto;
         transform: none;
         flex-direction: row;
         gap: 12px;
     }
 
-        .floating-social a {
-            width: 48px;
-            height: 48px;
-            font-size: 1.2rem;
-        }
-
-    /* Scroll un poco más abajo */
     #scrollTopBtn {
-        bottom: 20px;
+        position: fixed;
+        bottom: 20px; /* siempre debajo */
         right: 15px;
-        width: 50px;
-        height: 50px;
-        font-size: 1.2rem;
+        width: 52px;
+        height: 52px;
     }
 }
