@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -35,7 +34,7 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -67,24 +66,36 @@
     <!-- Hero -->
     <section class="hero d-flex align-items-center text-center">
         <div class="container">
-            <h1 class="display-3 fw-bold">The Future is Meme</h1>
-            <p class="lead">"The new generation of community and utility.</p>
+            <h1 class="fw-bold hero-title">The Future is Meme</h1>
+            <p class="hero-subtitle">The new generation of community and utility</p>
             <a href="https://lfg.kaspa.com/app" target="_blank" class="btn-buy">Buy Now</a>
         </div>
+
+        <!-- Divider dentro del hero -->
+        <svg viewBox="0 0 1440 150" class="hero-about-divider">
+            <path fill="#fFF" d="M0,60 C360,120 1080,0 1440,70 L1440,150 L0,150 Z"></path>
+        </svg>
     </section>
+
+    <div class="snow-divider">
+        <!-- Contenedor de copos -->
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+    </div>
 
 
     <!-- About -->
     <section id="about" class="section-padding about">
         <div class="container">
 
-            <h2 class="section-title text-center mb-5">
-                🐧 About KENCHU
-            </h2>
+            <h2 class="section-title mb-5"> 🐧 About KENCHU </div>
 
             <div class="row align-items-center">
 
-                <!-- Imagen redonda -->
+             
                 <div class="col-md-6 text-center mb-4 mb-md-0">
                     <div class="about-image-wrapper">
                         <img src="img/kenchu.png"
@@ -93,7 +104,7 @@
                     </div>
                 </div>
 
-                <!-- Texto estructurado -->
+              
                 <div class="col-md-6">
 
                     <h3 class="fun-title">
@@ -131,7 +142,7 @@
                         🎉 Join the migration. Embrace the speed. Be part of the $KENCHU colony.
                     </p>
 
-                    <button class="btn btn-primary btn-lg mt-2">
+                    <button class="btn-buy">
                         🐧 Join the Colony
                     </button>
 
@@ -142,100 +153,144 @@
     </section>
 
 
-    <!-- Roadmap -->
+
+
+
+
+
+    <svg viewBox="0 0 1440 80" class="about-divider">
+
+        <circle cx="100" cy="40" r="15" fill="#ffd700" />
+        <circle cx="400" cy="30" r="15" fill="#ff69b4" />
+        <circle cx="700" cy="45" r="15" fill="#00bfff" />
+        <circle cx="1000" cy="35" r="15" fill="#ba55d3" />
+        <circle cx="1300" cy="40" r="15" fill="#32cd32" />
+    </svg>
+
     <section id="roadmap" class="section-padding">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">🐧 Roadmap Kenchu</h2>
+        <div class="container text-center">
 
-            <!-- 1️ VISION PANEL -->
-            <div class="vision-panel mb-5">
-                <h3>Vision & Introduction</h3>
-                <p>
-                    KENCHU is the first major community-driven initiative to unite the speed of Kaspa’s BlockDAG
-                    with a globally recognizable meme identity. Leveraging 1-second block times, $KENCHU
-                    provides a seamless near-instant user experience. Our goal is to become the "Green Standard"
-                    for meme tokens on the KRC-20 protocol.
-                </p>
-            </div>
+            <h2 class="section-title mb-5">🐧 Roadmap Kenchu</h2>
 
-            <!-- 2️ TECHNOLOGY BUBBLES -->
-            <div class="row text-center mb-5">
-                <div class="col-md-4">
-                    <div class="tech-bubble">
-                        <h4>Proof-of-Work Security</h4>
-                        <p>Secured by a robust PoW network ensuring decentralization and safety.</p>
+            <!-- INTRO BOX -->
+            <div class="roadmap-intro mb-5">
+
+                <div class="roadmap-section blue-content">
+                    <div class="roadmap-icon">⚡</div>
+                    <div class="roadmap-text">
+                        1-second block times<br>
+                        for lightning-fast transactions!
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="tech-bubble">
-                        <h4>KRC-20 Protocol</h4>
-                        <p>Built using the latest token standard on Kaspa for high-performance assets.</p>
+
+                <div class="roadmap-section pink-content">
+                    <div class="roadmap-icon">🟢</div>
+                    <div class="roadmap-text">
+                        Goal: Become the <strong>"Green Standard"</strong><br>
+                        for KRC-20 meme tokens
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="tech-bubble">
-                        <h4>Scalability</h4>
-                        <p>Fast and low-cost transactions even during high network traffic.</p>
+
+                <div class="roadmap-section green-content">
+                    <div class="roadmap-icon">🔐</div>
+                    <div class="roadmap-text">
+                        Proof-of-Work Security<br>
+                        Super safe & decentralized!
                     </div>
                 </div>
-            </div>
 
-            <!-- 3 LAUNCH STRATEGY CARD -->
-            <div class="launch-card mb-5">
-                <h3>Launch Strategy (Fairness First)</h3>
-                <p><strong>Zero Pre-sale:</strong> No private sales to prevent early dumping.</p>
-                <p><strong>Public Minting:</strong> 100% of the 1 trillion supply available via LFG Kaspa.</p>
-                <p><strong>Market Maturation:</strong> After full minting, graduation to mainnet and activation of a 1764 KAS community bonus.</p>
-            </div>
-
-            <!-- 🐧 PHASES ROADMAP (Nueva Sección) -->
-            <div class="roadmap-wrapper">
-
-                <!-- Phase 1 -->
-                <div class="roadmap-phase">
-                    <img src="img/phase1.png" alt="Phase 1" class="phase-img">
-                    <h4>Phase 1: Foundation & Security</h4>
-                    <ul>
-                        <li>Launch of Fair Launch Model</li>
-                        <li>Full Transparency on taken allocation</li>
-                        <li>Reserved 10% supply breakdown: 5% Growth Reserve (2,5% CEO, 2,5% Partner)</li>
-                        <li>Community Governance Framework</li>
-                    </ul>
+                <div class="roadmap-section yellow-content">
+                    <div class="roadmap-icon">🚀</div>
+                    <div class="roadmap-text">
+                        KRC-20 Protocol<br>
+                        Fast, high-performance assets
+                    </div>
                 </div>
 
-                <!-- Phase 2 -->
-                <div class="roadmap-phase">
-                    <img src="img/phase2.png" alt="Phase 2" class="phase-img">
-                    <h4>Phase 2: Ecosystem Expansion</h4>
-                    <ul>
-                        <li>Strategic Marketing Expansion</li>
-                        <li>Strengthening Partnerships within the Kaspa ecosystem</li>
-                        <li>First Wave of Airdrops from the Growth Reserve</li>
-                    </ul>
+                <div class="roadmap-section purple-content">
+                    <div class="roadmap-icon">💰</div>
+                    <div class="roadmap-text">
+                        Launch Strategy:<br>
+                        ❌ No pre-sale<br>
+                        🟢 100% public mint<br>
+                        🎁 1764 KAS community bonus
+                    </div>
                 </div>
 
-                <!-- Phase 3 -->
-                <div class="roadmap-phase">
-                    <img src="img/phase3.png" alt="Phase 3" class="phase-img">
-                    <h4>Phase 3: Global Presence</h4>
-                    <ul>
-                        <li>Exclusive Kenchu NFT Collection</li>
-                        <li>Major CEX Listing Targets</li>
-                    </ul>
+                <!-- PHASES DENTRO DEL INTRO BOX -->
+                <div class="row justify-content-center g-4 phases-container">
+                    <!-- Phase 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="phase-box phase-1">
+                            <img src="img/phase1.png" class="phase-avatar">
+                            <h4>🐣 Phase 1</h4>
+                            <ul>
+                                <li>Fair launch</li>
+                                <li>Transparent allocations</li>
+                                <li>Community governance</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="phase-box phase-2">
+                            <img src="img/phase2.png" class="phase-avatar">
+                            <h4>🌱 Phase 2</h4>
+                            <ul>
+                                <li>Marketing expansion</li>
+                                <li>Kaspa partnerships</li>
+                                <li>First airdrops</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="phase-box phase-3">
+                            <img src="img/phase3.png" class="phase-avatar">
+                            <h4>🌍 Phase 3</h4>
+                            <ul>
+                                <li>Kenchu NFT collection</li>
+                                <li>Global community</li>
+                                <li>CEX listings</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-
         </div>
     </section>
 
 
 
+    <!-- Separador ROADMAP  -->
+    <svg viewBox="0 0 1440 120" class="roadmap-divider">
+        <!-- carretera gris -->
+        <path d="M0,80 Q360,40 720,80 T1440,80" fill="none" stroke="#555" stroke-width="20" stroke-linecap="round" />
+        <!-- rayas amarillas en medio -->
+        <path d="M0,80 Q360,40 720,80 T1440,80" fill="none" stroke="#ffd700" stroke-width="6" stroke-dasharray="20,20" stroke-linecap="round" />
+        <!-- banderitas -->
+        <circle cx="200" cy="70" r="12" fill="#ff69b4" stroke="#000" stroke-width="2" />
+        <circle cx="720" cy="60" r="12" fill="#00bfff" stroke="#000" stroke-width="2" />
+        <circle cx="1240" cy="70" r="12" fill="#ba55d3" stroke="#000" stroke-width="2" />
+    </svg>
 
+    <!-- Opcional: pingüinos flotando sobre la carretera -->
+    <div class="penguin size-small" style="left: 15%; top: -40px;">
+        <img src="img/pingu1.png">
+    </div>
+    <div class="penguin size-medium" style="left: 50%; top: -45px;">
+        <img src="img/pingu1.png">
+    </div>
+    <div class="penguin size-small" style="left: 85%; top: -40px;">
+        <img src="img/pingu1.png">
+    </div>
 
 
     <!-- Tokenomics -->
-    <section id="tokenomics" class="section-padding section-light-green">
+    <section id="tokenomics" class="section-padding">
 
         <div class="container text-center">
 
@@ -251,7 +306,7 @@
             <div class="row g-4">
 
                 <div class="col-md-3">
-                    <div class="token-card">
+                    <div class="token-card purple-content">
                         <div class="token-icon">🧬</div>
                         <h3>KENCHU</h3>
                         <p>Token Name</p>
@@ -259,7 +314,7 @@
                 </div>
 
                 <div class="col-md-3">
-                    <div class="token-card">
+                    <div class="token-card yellow-content">
                         <div class="token-icon">💰</div>
                         <h3>$KENCHU</h3>
                         <p>Ticker</p>
@@ -267,7 +322,7 @@
                 </div>
 
                 <div class="col-md-3">
-                    <div class="token-card">
+                    <div class="token-card green-content">
                         <div class="token-icon">⚡</div>
                         <h3>KRC-20</h3>
                         <p>Standard</p>
@@ -275,7 +330,7 @@
                 </div>
 
                 <div class="col-md-3">
-                    <div class="token-card">
+                    <div class="token-card blue-content">
                         <div class="token-icon">🌍</div>
                         <h3>1T</h3>
                         <p>Total Supply</p>
@@ -284,39 +339,53 @@
 
             </div>
 
-            <!-- Energy Bars -->
-            <div class="energy-system mt-5">
-
-                <h4 class="mb-4">Community Distribution Engine</h4>
-
-                <div class="energy-bar">
-                    <span>100% Fair Launch</span>
-                    <div class="energy-fill"></div>
-                </div>
-
-                <div class="energy-bar">
-                    <span>No Pre-Sale</span>
-                    <div class="energy-fill"></div>
-                </div>
-
-                <div class="energy-bar">
-                    <span>No Team Allocation</span>
-                    <div class="energy-fill"></div>
-                </div>
-
-                <div class="energy-bar">
-                    <span>Community Minted</span>
-                    <div class="energy-fill"></div>
-                </div>
-
-            </div>
-
         </div>
     </section>
 
+    <!-- Separador Tokenomics  -->
+    <svg viewBox="0 0 1440 200" class="tokenomics-divider">
+        <!-- Fondo azul suave -->
+        <rect width="1440" height="200" fill="#d0f0fd" />
+
+        <!-- Montaña de monedas extendida full width -->
+        <circle cx="100" cy="150" r="20" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="150" cy="140" r="25" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="220" cy="130" r="30" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="300" cy="145" r="25" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="400" cy="135" r="35" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="500" cy="150" r="25" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="600" cy="140" r="30" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="700" cy="150" r="25" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="800" cy="135" r="30" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="900" cy="150" r="25" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="1000" cy="140" r="30" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="1100" cy="150" r="25" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="1200" cy="135" r="30" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="1300" cy="150" r="25" fill="#ffd700" stroke="#000" stroke-width="2" />
+        <circle cx="1400" cy="140" r="20" fill="#ffd700" stroke="#000" stroke-width="2" />
+
+        <!-- Cofre del tesoro central -->
+        <rect x="680" y="90" width="80" height="50" rx="10" ry="10" fill="#8b4513" stroke="#000" stroke-width="3" />
+        <rect x="680" y="90" width="80" height="10" fill="#cd853f" stroke="#000" stroke-width="2" />
+        <circle cx="720" cy="115" r="5" fill="#ffd700" stroke="#000" stroke-width="1" />
+    </svg>
+
+    <!-- Pingüinos animados sobre la montaña -->
+    <div class="penguin size-small" style="left: 15%; top: -50px;">
+        <img src="img/pingu1.png">
+    </div>
+    <div class="penguin size-medium" style="left: 50%; top: -55px;">
+        <img src="img/pingu1.png">
+    </div>
+    <div class="penguin size-small" style="left: 85%; top: -50px;">
+        <img src="img/pingu1.png">
+    </div>
+
+
+
     <!-- How To Buy -->
     <section id="howtobuy" class="section-padding">
-
+        <img src="img/how-to-buy.png" alt="How to Buy" class="howtobuy-bg">
         <div class="container text-center">
 
             <h2 class="section-title mb-4">
@@ -342,18 +411,18 @@
             <div class="row mt-4">
 
                 <div class="col-md-4 mb-4">
-                    <div class="buy-card">
+                    <div class="buy-card green-content">
                         <div class="step-circle">01</div>
                         <h5>Connect Wallet</h5>
-                        <p>Use a compatible Kaspa wallet like Kasware.</p>
+                         <p class="buy-text">Use a compatible Kaspa wallet like Kasware.</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
-                    <div class="buy-card">
+                    <div class="buy-card pink-content">
                         <div class="step-circle">02</div>
                         <h5>Visit LFG</h5>
-                        <p>
+                         <p class="buy-text">
                             Go to
                             <a href="https://lfg.kaspa.com/app"
                                target="_blank"
@@ -367,10 +436,10 @@
                 </div>
 
                 <div class="col-md-4 mb-4">
-                    <div class="buy-card">
+                    <div class="buy-card blue-content">
                         <div class="step-circle">03</div>
                         <h5>Mint & Join</h5>
-                        <p>Confirm transaction and join the $KENCHU.</p>
+                        <p class="buy-text">Confirm transaction and join the $KENCHU.</p>
                     </div>
                 </div>
 
@@ -380,10 +449,11 @@
     </section>
 
 
+
     <!-- FAQ -->
-    <section id="faq" class="section-padding faq-section text-light">
+    <section id="faq" class="section-padding faq-section">
         <div class="container">
-            <h2 class="section-title text-center">Frequently Asked Questions (FAQ)</h2>
+            <h2 class="section-title text-center">Frequently Asked Questions (FAQ) kenchu</h2>
 
             <div class="accordion mt-5 custom-accordion" id="faqAccordion">
 
@@ -404,7 +474,7 @@
 
                 <!-- 2 -->
                 <div class="accordion-item">
-                    <h2 class="accordion-header">
+                    <h2 class="accordion-header ">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
                             How can I buy $KENCHU?
                         </button>
@@ -480,6 +550,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="text-center py-4">
